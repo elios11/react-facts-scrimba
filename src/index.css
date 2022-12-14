@@ -13,24 +13,23 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    padding: 30px 26px;
-    margin-bottom: 1px;
+    padding: 1.9rem 1.7rem;
     background-color: white;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 .navbar-dark {
     background-color: #21222A;
-    margin-bottom: 0;
     box-shadow: none;
 }
 
 .navbar--icon {
-    width: 30px;
+    width: 1.9rem;
 }
 
 .navbar--icon_text {
-    font-size: 22px;
+    font-size: 1.35rem;
     font-weight: 700;
     color: #61DAFB;
     margin: 0 auto 0 7px;
@@ -47,11 +46,11 @@ body {
 }
 
 .toggler--slider {
-    width: 25px;
-    height: 13px;
+    width: 1.8rem;
+    height: 0.85rem;
     background-color: #2B283A;
     border-radius: 2rem;
-    margin-inline: 7px;
+    margin-inline: 0.5rem;
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
@@ -65,8 +64,8 @@ body {
 }
 
 .toggler--slider--circle {
-    height: 13px;
-    width: 13px;
+    height: 0.8rem;
+    width: 0.8rem;
     background-color: white;
     border-radius: 50%;
 }
@@ -101,7 +100,7 @@ main {
     background-repeat: no-repeat;
     background-position: right center;
     flex: 1 1 auto;
-    padding: 57px 27px;
+    padding: 3.5rem 1.7rem;
     color: #2B283A;
     background-color: white;
 }
@@ -116,13 +115,13 @@ main.dark {
     margin-top: 0;
     margin-bottom: 46px;
     font-weight: 700;
-    font-size: 39px;
+    font-size: 2.45rem;
     letter-spacing: -0.05em;
 }
 
 .main--list {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .main--list > li:not(:last-child) {
@@ -132,4 +131,36 @@ main.dark {
 .main--list > li::marker {
     color: #61DAFB;
     font-size: 1.4rem;
+}
+
+/* Responsiveness */
+@media (max-width: 576px) {
+    html {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 20px
+    }
+
+}
+
+@media (min-width: 2000px) {
+    html {
+        font-size: 30px
+    }
+}
+
+@media (min-width: 3000px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 3500px) {
+    html {
+        font-size: 60px;
+    }
 }
