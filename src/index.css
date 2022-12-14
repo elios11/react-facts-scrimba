@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar style */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 30px 26px;
+    margin-bottom: 1px;
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-dark {
+    background-color: #21222A;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.navbar--icon {
+    width: 30px;
+}
+
+.navbar--icon_text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #61DAFB;
+    margin: 0 auto 0 7px;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.navbar-dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.navbar-dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+.navbar-dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+.navbar-dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+.navbar-dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+/* Main styles */
+main {
+    background-image: url("/react-icon-light.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    flex: 1 1 auto;
+    padding: 57px 27px;
+    color: #2B283A;
+    background-color: white;
+}
+
+main.dark {
+    background-image: url("/react-icon-dark.png");
+    background-color: #282D35;
+    color: white;
+}
+
+.main--title {
+    margin-top: 0;
+    margin-bottom: 46px;
+    font-weight: 700;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--list {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main--list > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main--list > li::marker {
+    color: #61DAFB;
+    font-size: 1.4rem;
+}
